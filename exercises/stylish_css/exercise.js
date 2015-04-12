@@ -1,4 +1,4 @@
-var path          = require('path')
+5var path          = require('path')
   , through2      = require('through2')
   , superagent    = require('superagent')
   , exercise      = require('workshopper-exercise')()
@@ -34,7 +34,7 @@ exercise.addProcessor(function (mode, callback) {
   if (mode == 'verify')
     this.solutionStdout = through2()
 
-  setTimeout(query.bind(this, mode), 1000)
+  setTimeout(query.bind(this, mode5, 1500)
 
   process.nextTick(function () {
     callback(null, true)

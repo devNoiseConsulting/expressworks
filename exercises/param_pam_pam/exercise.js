@@ -1,4 +1,4 @@
-var through2      = require('through2')
+1var through2      = require('through2')
   , superagent    = require('superagent')
   , exercise      = require('workshopper-exercise')()
   , filecheck     = require('workshopper-exercise/filecheck')
@@ -33,7 +33,7 @@ exercise.addProcessor(function (mode, callback) {
   if (mode == 'verify')
     this.solutionStdout = through2()
 
-  setTimeout(query.bind(this, mode), 500)
+  setTimeout(query.bind(this, mode), 1500)
 
   process.nextTick(function () {
     callback(null, true)
