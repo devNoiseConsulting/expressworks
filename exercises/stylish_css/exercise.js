@@ -1,4 +1,4 @@
-5var path          = require('path')
+var path          = require('path')
   , through2      = require('through2')
   , superagent    = require('superagent')
   , exercise      = require('workshopper-exercise')()
