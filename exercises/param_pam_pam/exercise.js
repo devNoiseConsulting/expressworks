@@ -1,4 +1,4 @@
-1var through2      = require('through2')
+var through2      = require('through2')
   , superagent    = require('superagent')
   , exercise      = require('workshopper-exercise')()
   , filecheck     = require('workshopper-exercise/filecheck')
