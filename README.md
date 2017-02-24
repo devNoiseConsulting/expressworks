@@ -1,60 +1,114 @@
 expressworks
 ============
 
-Express.js workshop based on [workshopper](https://github.com/rvagg/workshopper) and inspired by [stream-adventure](https://github.com/substack/stream-adventure) by [@substack](https://twitter.com/substack) and [@maxogden](https://twitter.com/maxogden). ExpressWorks will provide you with tasks and hints. You write the solutions to these problems. Then, after you wrote a solution as an Express.js app, ExpressWorks will verify your solution to the problem.
+Learn Express.js from the author of one of the best books on Express.js—[Pro Express.js](http://proexpressjs.com)—workshop to teach you basics of Express.js.
 
-![Hello World Express.js app](https://raw.github.com/azat-co/expressworks/master/images/hello-world.png)
+
+![Hello World Express.js app](https://raw.github.com/azat-co/expressworks/master/images/screen.png)
+
+This workshop is based on [workshopper](https://github.com/rvagg/workshopper) and inspired by [stream-adventure](https://github.com/substack/stream-adventure) by [@substack](https://twitter.com/substack) and [@maxogden](https://twitter.com/maxogden).
+
+ExpressWorks will provide you with tasks and hints. You write the solutions to these problems. Then, after you wrote a solution as an Express.js app, ExpressWorks will verify your solution to the problem.
+
+[![](https://raw.github.com/azat-co/expressworks/master/images/youtube.png)](https://www.youtube.com/watch?v=C2IqQOLCCoU&list=PLguYmmjtxbWGwQRxXqMTQCj6FNb55aFVo)
+
+**Video screencasts** which walk your through setup and problems (spoiler alert): [YouTube ExpressWorks](https://www.youtube.com/watch?v=C2IqQOLCCoU&list=PLguYmmjtxbWGwQRxXqMTQCj6FNb55aFVo). 📺💻😁
+
+
+
+
+This workshop is brought to you by the author of [Pro Express.js](http://proexpressjs.com) (Apress 2014) [Azat Mardan](http://azat.co).
+
+[![](https://raw.github.com/azat-co/expressworks/master/images/cover.jpg)](http://proexpressjs.com)
+
+
+
+## Cheatsheet
+
+You might want to download [the free Express.js cheatsheet](https://gumroad.com/l/NQiQ/git-874E6FB4) before embarking on a journey, or [view it online](https://gumroad.com/l/NQiQ/git-874E6FB4).
+
+
+
+## Languages
+
+* English
+* French
+* Simplified Chinese
+* Traditional Chinese
+* Korean
+* Japanese
 
 ## Contributors
 
 
 ```
-    19  Christophe Porteneuve
-     3  Harry Moreno
-     3  Charlotte Spencer
-     2  Thomas Burette
-     2  intrueder
-     2  Kevin Jayanthan
-     1  Louis Pilfold
-     1  Rich Trott
-     1  Richard Kho
-     1  Ryan Kois
-     1  Timothy Gu
-     1  Wojciech Gawronski
-     1  brownman
-     1  Alessandro Lensi
-     1  raj
-     1  Ayman Mahfouz
-     1  Daniel Geier
-     1  Dylan Smith
-     1  Finn
-     1  Giuseppe
-     1  Jessie Shi
-     1  Jonny Arnold
+105  Azat Mardan
+55  Azat Mardanov
+19  Christophe Porteneuve
+10  Tyler Moeller
+10  azat-co
+ 9  RamiroPinol
+ 8  Justin Porter
+ 8  Elias Meire
+ 6  billy3321
+ 4  Kohei TAKATA
+ 3  Charlotte Spencer
+ 3  Harry Moreno
+ 2  Austin Corso
+ 2  Julian Mazzitelli
+ 2  Kevin Jayanthan
+ 2  Robbie Holmes
+ 2  Shim Won
+ 2  Thomas Burette
+ 2  intrueder
+ 1  Alessandro Lensi
+ 1  Alfredo Miranda
+ 1  Ayman Mahfouz
+ 1  Daniel Geier
+ 1  Dylan Smith
+ 1  Eddie Hsieh
+ 1  Finn
+ 1  Gabe Fernando
+ 1  Giuseppe
+ 1  Jessie Shi
+ 1  Johan Binard
+ 1  Jonny Arnold
+ 1  Kevin Kuhl
+ 1  Louis Pilfold
+ 1  Rich Trott
+ 1  Richard Kho
+ 1  Ryan Kois
+ 1  Timothy Gu
+ 1  Trevor Whitney
+ 1  Wojciech Gawronski
+ 1  brownman
+ 1  raj
+ 1  swisherb
+ 1  tdtsh
+ 1  Victor Hugo Rocha
 ```
 
 Make a PR to see your name here. ;-)
 
-PS: via `git shortlog -n -s`
+PS: via `$ git shortlog -n -s`. Please add yourself to the list when making a pull request.
 
-## Installation (recommended)
+## Installation (Recommended)
 
 Recommended global installation:
 
 ```bash
-$ npm install express
 $ npm install -g expressworks
 $ expressworks
 ```
-
 
 If you see errors, try:
 
 ```bash
 $ sudo npm install -g expressworks
+$ expressworks
 ```
 
-## Local Installation (advanced)
+## Local Installation (Advanced)
 
 Run & install locally:
 
@@ -65,9 +119,27 @@ $ cd node_modules/expressworks
 $ node expressworks
 ```
 
+Optional step that gives you the global command (`expressworks`) in the Terminal/command prompt:
+
+```
+$ npm link
+$ expressworks
+```
+
 # Usage
-*Note*: ExpressWorks depends on a local copy of express being available. Make sure to do
-`npm install express` to do the exercises.
+
+```
+$ expressworks
+```
+
+*Note*: ExpressWorks depends on a local copy of Express being available in your project folder.  To do the exercises, make sure to install the Express.js with
+
+```
+$ npm init
+$ npm install express@4.11.2
+```
+
+See Offline Setup for more required dependencies.
 
 ExpressWorks understands these commands:
 
@@ -88,6 +160,20 @@ Usage
     Verify your program against the expected output.
 ```
 
+# Offline Setup
+
+If you would like to setup all node packages beforehand, you can complete this workshop offline. Here are all the modules to install with exact versions that this workshop supports:
+
+```bash
+$ npm install express@4.11.2
+$ npm install pug@2.0.0-beta6
+$ npm install body-parser@1.12.0
+$ npm install stylus@0.50.0
+```
+
+Note: You need to have `node_modules` or `packagen.json` in your project folder before installing dependencies. Run `$ mkdir node_modules` or `$ npm init` to create one of them.
+
+
 # Reset
 
 If you want to reset the list of completed tasks, clean the `~/.config/expressworks/completed.json` file.
@@ -96,7 +182,7 @@ If you want to reset the list of completed tasks, clean the `~/.config/expresswo
 
 # More Information
 
-Check out [Express.js Guide](http://expressjsguide.com).
+Check out [Express.js Guide](http://expressjsguide.com), [Pro Express.js](http://proexpressjs.com) and [FREE Express.js cheatsheet](https://gumroad.com/l/NQiQ/git-874E6FB4).
 
 # Steps
 
@@ -107,9 +193,9 @@ Create an Express.js app that runs on localhost:3000, and outputs "Hello World!"
 
 `process.argv[2]` will be provided by expressworks to you, this is the port number.
 
-## Jade
+## Pug
 
-Create an Express.js app with a home page (/home) rendered by jade template engine, that shows current date (toDateString).
+Create an Express.js app with a home page (/home) rendered by pug template engine, that shows current date (toDateString).
 
 
 ## Good Old Form
@@ -174,4 +260,3 @@ Write a route that extracts data from query string in the GET `/search` URL rout
 ## JSON Me
 
 Write a server that reads a file (file name is passed in `process.argv[3]`), parses it to JSON and outputs the content to the user with `res.json(object)`.
-
